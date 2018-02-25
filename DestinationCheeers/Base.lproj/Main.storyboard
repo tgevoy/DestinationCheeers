@@ -75,7 +75,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="dayLabel" destination="3WY-b5-Y8w" id="VCb-Ua-Nsa"/>
+                                    <outlet property="dayLabel" destination="3WY-b5-Y8w" id="7HZ-ii-s30"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,12 +85,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="LVj-rN-0HF">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Jrd-Jf-yTD"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Jrd-Jf-yTD">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="Back" id="0Gt-qq-ojA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-jj-xh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="36"/>
+            <point key="canvasLocation" x="663" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cEx-th-5wH">
@@ -108,7 +112,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgf-zD-pNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="36"/>
+            <point key="canvasLocation" x="-204" y="756"/>
         </scene>
     </scenes>
     <resources>

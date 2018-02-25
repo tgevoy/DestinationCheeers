@@ -11,9 +11,9 @@ import UIKit
 class DayTableViewController: UITableViewController {
     
     // To display day objects stored in the model (DealItem.swift)
-    var daysOfWeek = [DealItem]()
+    var daysOfWeek = [Day]()
     
-    let cellIdentifier = "DealItemTableViewCell"
+    let cellIdentifier = "DayTableViewCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +53,7 @@ class DayTableViewController: UITableViewController {
      */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DealItemTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DayTableViewCell else {
             fatalError("Selected cell is not of type \(cellIdentifier)")
         }
         
