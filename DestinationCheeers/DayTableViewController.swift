@@ -31,26 +31,19 @@ class DayTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    // Tells day table view cell how many sections (visial groupings of cells) to display.
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     /*
-     * Displays required amount of rows for all the days
-     * of the week
+     * Tells the table view how many rows to display in a given section,
+     * i.e., each day object should have its own section.
      */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return daysOfWeek.count
     }
-    
-    /*
-     * Recycle the DayTableViewCells for efficiency
-     * reasons to keep updating new information as the user
-     * scrolls through the list.
-     */
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         /*

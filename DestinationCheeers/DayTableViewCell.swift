@@ -16,6 +16,8 @@ class DayTableViewCell: UITableViewCell {
     // MARK: Property - messageLabel outlet
     @IBOutlet weak var messageLabel: UILabel!
     
+
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -20,8 +20,14 @@ class Day: NSObject {
     var dayLabel: String?
     var messageLabel: String?
     
-    // Initialize day objects
+    // Initialize and create day and message label instances
     init?(dayLabel: String, messageLabel: String) {
+        
+        // Initialization should fail if there is no day label or if there's no message label
+        guard !dayLabel.isEmpty || !messageLabel.isEmpty else {
+            return nil
+        }
+        // Otherwise, initialize day and message labels
         self.dayLabel = dayLabel
         self.messageLabel = messageLabel
     }
