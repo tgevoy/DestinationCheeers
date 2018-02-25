@@ -16,11 +16,13 @@ import UIKit
 
 class Day: NSObject {
     
-    // Represents days of the week
-    var dayLabel: String
+    // MARK: Properties - day object attributes
+    var dayLabel: String?
+    var messageLabel: String?
     
     // Initialize day objects
-    init?(dayLabel: String) {
+    init?(dayLabel: String, messageLabel: String) {
         self.dayLabel = dayLabel
+        self.messageLabel = messageLabel
     }
 }

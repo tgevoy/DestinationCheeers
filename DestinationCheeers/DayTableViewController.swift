@@ -10,8 +10,8 @@ import UIKit
 
 class DayTableViewController: UITableViewController {
     
-    // To display day objects stored in the model (DealItem.swift)
-    var daysOfWeek = [Day]()
+    // To display day objects stored in the model (Day.swift)
+    var daysOfWeek = DayData.generateDaysOfWeek()
     
     let cellIdentifier = "DayTableViewCell"
 
@@ -47,18 +47,24 @@ class DayTableViewController: UITableViewController {
     }
     
     /*
-     * Recycle the DealItemTableViewCells for efficiency
+     * Recycle the DayTableViewCells for efficiency
      * reasons to keep updating new information as the user
-     * scrolls through the list
+     * scrolls through the list.
      */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        /*
+         * Check to see if an exisiting cell can be reused.
+         * If not, a prototype cell is automatically allocated
+         * and returned to screen for use.
+         */
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DayTableViewCell else {
             fatalError("Selected cell is not of type \(cellIdentifier)")
         }
         
         let day = daysOfWeek[indexPath.row]
-        cell.dayLabel.text = day.dayLabel
+        cell.dayLabel?.text = day.dayLabel
+        cell.messageLabel?.text = day.messageLabel
         
         return cell
     }

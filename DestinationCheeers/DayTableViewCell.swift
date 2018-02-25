@@ -13,6 +13,10 @@ class DayTableViewCell: UITableViewCell {
     // MARK: Property - dayLabel outlet
     @IBOutlet weak var dayLabel: UILabel!
     
+    // MARK: Property - messageLabel outlet
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
