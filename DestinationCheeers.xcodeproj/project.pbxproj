@@ -17,7 +17,8 @@
 		4974A20D204285320095CB31 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20C204285320095CB31 /* Day.swift */; };
 		4974A20F20428C280095CB31 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20E20428C280095CB31 /* DayTableViewCell.swift */; };
 		4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A210204297DD0095CB31 /* DayTableViewController.swift */; };
-		4974A2132042AA940095CB31 /* DayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A2122042AA940095CB31 /* DayData.swift */; };
+		4974A2132042AA940095CB31 /* DayDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A2122042AA940095CB31 /* DayDetails.swift */; };
+		499E47A220434B3700D5466A /* DealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E47A120434B3700D5466A /* DealDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,8 @@
 		4974A20C204285320095CB31 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		4974A20E20428C280095CB31 /* DayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
 		4974A210204297DD0095CB31 /* DayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewController.swift; sourceTree = "<group>"; };
-		4974A2122042AA940095CB31 /* DayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayData.swift; sourceTree = "<group>"; };
+		4974A2122042AA940095CB31 /* DayDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetails.swift; sourceTree = "<group>"; };
+		499E47A120434B3700D5466A /* DealDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,8 @@
 				4974A1DE2042689C0095CB31 /* AppDelegate.swift */,
 				4974A1E02042689C0095CB31 /* ViewController.swift */,
 				4974A1E22042689C0095CB31 /* Main.storyboard */,
-				4974A2122042AA940095CB31 /* DayData.swift */,
+				4974A2122042AA940095CB31 /* DayDetails.swift */,
+				499E47A120434B3700D5466A /* DealDetails.swift */,
 				4974A210204297DD0095CB31 /* DayTableViewController.swift */,
 				4974A20E20428C280095CB31 /* DayTableViewCell.swift */,
 				4974A20C204285320095CB31 /* Day.swift */,
@@ -271,8 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4974A2132042AA940095CB31 /* DayData.swift in Sources */,
+				4974A2132042AA940095CB31 /* DayDetails.swift in Sources */,
 				4974A20D204285320095CB31 /* Day.swift in Sources */,
+				499E47A220434B3700D5466A /* DealDetails.swift in Sources */,
 				4974A1E12042689C0095CB31 /* ViewController.swift in Sources */,
 				4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */,
 				4974A20F20428C280095CB31 /* DayTableViewCell.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class DayTableViewController: UITableViewController {
     
     // To display day objects stored in the model (Day.swift)
-    var daysOfWeek = DayData.generateDaysOfWeek()
+    var daysOfWeek = DayDetails.generateDaysOfWeek()
     
     let cellIdentifier = "DayTableViewCell"
 

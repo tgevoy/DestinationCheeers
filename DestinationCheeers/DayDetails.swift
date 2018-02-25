@@ -1,5 +1,5 @@
 //
-//  DayData.swift
+//  DayDetails.swift
 //  DestinationCheeers
 //
 //  Created by Tim Evoy on 2018-02-25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DayData {
+class DayDetails {
     
     static func generateDaysOfWeek() -> [Day] {
         return [
