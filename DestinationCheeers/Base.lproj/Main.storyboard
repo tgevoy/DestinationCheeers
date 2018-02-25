@@ -31,7 +31,7 @@
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ULM-b4-eNA" kind="show" id="ml8-Zo-Wsp"/>
+                                    <segue destination="tWU-lF-GP7" kind="show" id="ml8-Zo-Wsp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dcLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EQ9-qF-v9G">
@@ -46,18 +46,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="31.934032983508249"/>
+            <point key="canvasLocation" x="-204" y="37"/>
         </scene>
-        <!--Deal Item Table View Controller-->
+        <!--Day Table View Controller-->
         <scene sceneID="UFT-zU-wRb">
             <objects>
-                <tableViewController id="ULM-b4-eNA" customClass="DealItemTableViewController" customModule="DestinationCheeers" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ULM-b4-eNA" customClass="DayTableViewController" customModule="DestinationCheeers" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0oe-QW-z8M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DealItemTableViewCell" rowHeight="90" id="lFH-mk-bQf" customClass="DealItemTableViewCell" customModule="DestinationCheeers" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayTableViewCell" rowHeight="90" id="lFH-mk-bQf" customClass="DayTableViewCell" customModule="DestinationCheeers" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lFH-mk-bQf" id="ITr-nL-zRv">
@@ -84,10 +84,31 @@
                             <outlet property="delegate" destination="ULM-b4-eNA" id="dXR-3c-Gew"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="LVj-rN-0HF">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Jrd-Jf-yTD"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-jj-xh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="38"/>
+            <point key="canvasLocation" x="1383" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cEx-th-5wH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tWU-lF-GP7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tbN-Fj-x97">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ULM-b4-eNA" kind="relationship" relationship="rootViewController" id="vdC-I3-Pqv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgf-zD-pNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="36"/>
         </scene>
     </scenes>
     <resources>

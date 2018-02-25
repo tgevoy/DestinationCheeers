@@ -1,5 +1,5 @@
 //
-//  DealItemTableViewController.swift
+//  DayTableViewController.swift
 //  DestinationCheeers
 //
 //  Created by Tim Evoy on 2018-02-24.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DealItemTableViewController: UITableViewController {
+class DayTableViewController: UITableViewController {
     
     // To display day objects stored in the model (DealItem.swift)
     var daysOfWeek = [DealItem]()

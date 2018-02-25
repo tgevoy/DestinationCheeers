@@ -14,9 +14,9 @@
 		4974A1E92042689C0095CB31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4974A1E72042689C0095CB31 /* LaunchScreen.storyboard */; };
 		4974A1F42042689C0095CB31 /* DestinationCheeersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A1F32042689C0095CB31 /* DestinationCheeersTests.swift */; };
 		4974A1FF2042689C0095CB31 /* DestinationCheeersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A1FE2042689C0095CB31 /* DestinationCheeersUITests.swift */; };
-		4974A20D204285320095CB31 /* DealItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20C204285320095CB31 /* DealItem.swift */; };
-		4974A20F20428C280095CB31 /* DealItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20E20428C280095CB31 /* DealItemTableViewCell.swift */; };
-		4974A211204297DD0095CB31 /* DealItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A210204297DD0095CB31 /* DealItemTableViewController.swift */; };
+		4974A20D204285320095CB31 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20C204285320095CB31 /* Day.swift */; };
+		4974A20F20428C280095CB31 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20E20428C280095CB31 /* DayTableViewCell.swift */; };
+		4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A210204297DD0095CB31 /* DayTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		4974A1FA2042689C0095CB31 /* DestinationCheeersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestinationCheeersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4974A1FE2042689C0095CB31 /* DestinationCheeersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCheeersUITests.swift; sourceTree = "<group>"; };
 		4974A2002042689C0095CB31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4974A20C204285320095CB31 /* DealItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealItem.swift; sourceTree = "<group>"; };
-		4974A20E20428C280095CB31 /* DealItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealItemTableViewCell.swift; sourceTree = "<group>"; };
-		4974A210204297DD0095CB31 /* DealItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealItemTableViewController.swift; sourceTree = "<group>"; };
+		4974A20C204285320095CB31 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		4974A20E20428C280095CB31 /* DayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
+		4974A210204297DD0095CB31 /* DayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +106,9 @@
 				4974A1DE2042689C0095CB31 /* AppDelegate.swift */,
 				4974A1E02042689C0095CB31 /* ViewController.swift */,
 				4974A1E22042689C0095CB31 /* Main.storyboard */,
-				4974A210204297DD0095CB31 /* DealItemTableViewController.swift */,
-				4974A20E20428C280095CB31 /* DealItemTableViewCell.swift */,
-				4974A20C204285320095CB31 /* DealItem.swift */,
+				4974A210204297DD0095CB31 /* DayTableViewController.swift */,
+				4974A20E20428C280095CB31 /* DayTableViewCell.swift */,
+				4974A20C204285320095CB31 /* Day.swift */,
 				4974A1E52042689C0095CB31 /* Assets.xcassets */,
 				4974A1E72042689C0095CB31 /* LaunchScreen.storyboard */,
 				4974A1EA2042689C0095CB31 /* Info.plist */,
@@ -268,10 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4974A20D204285320095CB31 /* DealItem.swift in Sources */,
+				4974A20D204285320095CB31 /* Day.swift in Sources */,
 				4974A1E12042689C0095CB31 /* ViewController.swift in Sources */,
-				4974A211204297DD0095CB31 /* DealItemTableViewController.swift in Sources */,
-				4974A20F20428C280095CB31 /* DealItemTableViewCell.swift in Sources */,
+				4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */,
+				4974A20F20428C280095CB31 /* DayTableViewCell.swift in Sources */,
 				4974A1DF2042689C0095CB31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

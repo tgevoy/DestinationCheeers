@@ -1,5 +1,5 @@
 //
-//  DealItemTableViewCell.swift
+//  DayTableViewCell.swift
 //  DestinationCheeers
 //
 //  Created by Tim Evoy on 2018-02-24.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DealItemTableViewCell: UITableViewCell {
+class DayTableViewCell: UITableViewCell {
     
     // MARK: Property - dayLabel outlet
     @IBOutlet weak var dayLabel: UILabel!
