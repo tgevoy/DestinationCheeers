@@ -6,4 +6,9 @@
 //  Copyright © 2018 Tim Evoy. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class DealDetails {
+    
+    
+}

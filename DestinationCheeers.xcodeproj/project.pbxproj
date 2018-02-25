@@ -19,6 +19,7 @@
 		4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A210204297DD0095CB31 /* DayTableViewController.swift */; };
 		4974A2132042AA940095CB31 /* DayDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A2122042AA940095CB31 /* DayDetails.swift */; };
 		499E47A220434B3700D5466A /* DealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E47A120434B3700D5466A /* DealDetails.swift */; };
+		499E47A42043539400D5466A /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E47A32043539400D5466A /* Deal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4974A210204297DD0095CB31 /* DayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewController.swift; sourceTree = "<group>"; };
 		4974A2122042AA940095CB31 /* DayDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetails.swift; sourceTree = "<group>"; };
 		499E47A120434B3700D5466A /* DealDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetails.swift; sourceTree = "<group>"; };
+		499E47A32043539400D5466A /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				4974A210204297DD0095CB31 /* DayTableViewController.swift */,
 				4974A20E20428C280095CB31 /* DayTableViewCell.swift */,
 				4974A20C204285320095CB31 /* Day.swift */,
+				499E47A32043539400D5466A /* Deal.swift */,
 				4974A1E52042689C0095CB31 /* Assets.xcassets */,
 				4974A1E72042689C0095CB31 /* LaunchScreen.storyboard */,
 				4974A1EA2042689C0095CB31 /* Info.plist */,
@@ -277,6 +280,7 @@
 				4974A2132042AA940095CB31 /* DayDetails.swift in Sources */,
 				4974A20D204285320095CB31 /* Day.swift in Sources */,
 				499E47A220434B3700D5466A /* DealDetails.swift in Sources */,
+				499E47A42043539400D5466A /* Deal.swift in Sources */,
 				4974A1E12042689C0095CB31 /* ViewController.swift in Sources */,
 				4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */,
 				4974A20F20428C280095CB31 /* DayTableViewCell.swift in Sources */,
