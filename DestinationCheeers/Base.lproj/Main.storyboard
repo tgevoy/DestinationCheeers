@@ -97,7 +97,7 @@
                                 <connections>
                                     <outlet property="dayLabel" destination="3WY-b5-Y8w" id="7HZ-ii-s30"/>
                                     <outlet property="messageLabel" destination="js1-0B-mpw" id="Cz7-gQ-Vct"/>
-                                    <segue destination="3Q4-VH-4sb" kind="presentation" id="vdL-qG-8Hv"/>
+                                    <segue destination="hMl-IC-eJB" kind="presentation" id="vdL-qG-8Hv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -114,7 +114,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="3Q4-VH-4sb" kind="show" identifier="dealDetails" id="b1m-mi-S0B"/>
+                        <segue destination="hMl-IC-eJB" kind="show" identifier="dealDetails" id="b1m-mi-S0B"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-jj-xh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -179,10 +179,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gVW-Uu-MeQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Jkn-sJ-2CZ">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="sCb-KA-1Gx">
+                            <connections>
+                                <segue destination="ULM-b4-eNA" kind="show" id="00I-on-bqq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="as7-sl-91h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.79999999999995" y="583.3583208395803"/>
+            <point key="canvasLocation" x="1642" y="582"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cEx-th-5wH">
@@ -202,12 +209,31 @@
             </objects>
             <point key="canvasLocation" x="-690" y="584"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="atd-35-XYd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hMl-IC-eJB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tug-ro-y1I">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Q4-VH-4sb" kind="relationship" relationship="rootViewController" id="MGY-pj-6ic"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zq6-Xd-faV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="582.90854572713647"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dcDealIcon" width="500" height="500"/>
         <image name="dcLogo" width="342" height="241"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vdL-qG-8Hv"/>
+        <segue reference="b1m-mi-S0B"/>
+        <segue reference="00I-on-bqq"/>
     </inferredMetricsTieBreakers>
 </document>
