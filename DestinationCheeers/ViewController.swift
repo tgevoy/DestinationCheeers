@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
         
+    @IBOutlet weak var showDealsBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        showDealsBtn.layer.cornerRadius = 4
     }
 
     override func didReceiveMemoryWarning() {
