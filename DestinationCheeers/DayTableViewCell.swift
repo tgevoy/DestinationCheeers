@@ -15,12 +15,10 @@ class DayTableViewCell: UITableViewCell {
     
     // MARK: Property - messageLabel outlet
     @IBOutlet weak var messageLabel: UILabel!
-    
-
-    
-    
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
+        dayLabel.layer.cornerRadius = 4
         // Initialization code
     }
 
