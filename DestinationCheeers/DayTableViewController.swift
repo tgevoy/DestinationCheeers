@@ -55,9 +55,9 @@ class DayTableViewController: UITableViewController {
             fatalError("Selected cell is not of type \(cellIdentifier)")
         }
         
-        let day = daysOfWeek[indexPath.row]
-        cell.dayLabel?.text = day.dayLabel
-        cell.messageLabel?.text = day.messageLabel
+        let selectedDay = daysOfWeek[indexPath.row]
+        cell.dayLabel?.text = selectedDay.dayLabel
+        cell.messageLabel?.text = selectedDay.messageLabel
         
         return cell
     }

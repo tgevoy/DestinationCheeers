@@ -18,7 +18,7 @@ class DayDetails {
             Day(dayLabel: "Thursday", messageLabel: "Tandoori Chicken & Tiki Masala")!,
             Day(dayLabel: "Friday", messageLabel: "Deepfried Mars Bar, Featured Pints, & Filet Mignon")!,
             Day(dayLabel: "Saturday", messageLabel: "Shucked Oysters, Street Tacos, and Soup du Jour")!,
-            Day(dayLabel: "Sunday", messageLabel: "Espresso Shafts, Seafood Caesars, & Select Appies")!,
+            Day(dayLabel: "Sunday", messageLabel: "Espresso Shafts, Seafood Caesars, & Select Appies")!
         ]
     }
 }

@@ -28,7 +28,7 @@ class Day: NSObject {
             return nil
         }
         // Otherwise, initialize day and message labels
-        self.dayLabel = dayLabel
-        self.messageLabel = messageLabel
+        self.dayLabel = dayLabel.capitalized
+        self.messageLabel = messageLabel.capitalized
     }
 }

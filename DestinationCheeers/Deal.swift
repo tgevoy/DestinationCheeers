@@ -33,12 +33,12 @@ class Deal: NSObject {
         }
         
         // Otherwise, initialize deal object labels and image.
-        self.dayDetailLabel = dayDetailLabel
-        self.restaurantLabel = restaurantLabel
-        self.addressLabel = addressLabel
+        self.dayDetailLabel = dayDetailLabel.capitalized
+        self.restaurantLabel = restaurantLabel.capitalized
+        self.addressLabel = addressLabel.capitalized
         self.hoursLabel = hoursLabel
         self.priceLabel = priceLabel
-        self.infoLabel = infoLabel
+        self.infoLabel = infoLabel.capitalized
         self.dcDealIcon = dcDealIcon
     }
 }
