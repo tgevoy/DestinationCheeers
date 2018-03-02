@@ -20,6 +20,7 @@ class Day: NSObject {
     var dayLabel: String?
     var messageLabel: String?
     
+    
     // Initialize and create day and message label instances
     init?(dayLabel: String, messageLabel: String) {
         
