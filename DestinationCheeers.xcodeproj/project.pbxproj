@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493E1AB22049C97800983A75 /* DayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493E1AB12049C97800983A75 /* DayDetailsViewController.swift */; };
+		493E1AB42049E4A400983A75 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493E1AB32049E4A400983A75 /* HelpViewController.swift */; };
 		4974A1DF2042689C0095CB31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A1DE2042689C0095CB31 /* AppDelegate.swift */; };
 		4974A1E12042689C0095CB31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A1E02042689C0095CB31 /* ViewController.swift */; };
 		4974A1E42042689C0095CB31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4974A1E22042689C0095CB31 /* Main.storyboard */; };
@@ -17,8 +19,6 @@
 		4974A20D204285320095CB31 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20C204285320095CB31 /* Day.swift */; };
 		4974A20F20428C280095CB31 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A20E20428C280095CB31 /* DayTableViewCell.swift */; };
 		4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A210204297DD0095CB31 /* DayTableViewController.swift */; };
-		4974A2132042AA940095CB31 /* DayDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974A2122042AA940095CB31 /* DayDetails.swift */; };
-		499E47A220434B3700D5466A /* DealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E47A120434B3700D5466A /* DealDetails.swift */; };
 		499E47A42043539400D5466A /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E47A32043539400D5466A /* Deal.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		493E1AB12049C97800983A75 /* DayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailsViewController.swift; sourceTree = "<group>"; };
+		493E1AB32049E4A400983A75 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		4974A1DB2042689C0095CB31 /* DestinationCheeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DestinationCheeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4974A1DE2042689C0095CB31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4974A1E02042689C0095CB31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +58,6 @@
 		4974A20C204285320095CB31 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		4974A20E20428C280095CB31 /* DayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
 		4974A210204297DD0095CB31 /* DayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewController.swift; sourceTree = "<group>"; };
-		4974A2122042AA940095CB31 /* DayDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetails.swift; sourceTree = "<group>"; };
-		499E47A120434B3700D5466A /* DealDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetails.swift; sourceTree = "<group>"; };
 		499E47A32043539400D5466A /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +112,8 @@
 				4974A1DE2042689C0095CB31 /* AppDelegate.swift */,
 				4974A1E02042689C0095CB31 /* ViewController.swift */,
 				4974A1E22042689C0095CB31 /* Main.storyboard */,
-				4974A2122042AA940095CB31 /* DayDetails.swift */,
-				499E47A120434B3700D5466A /* DealDetails.swift */,
+				493E1AB32049E4A400983A75 /* HelpViewController.swift */,
+				493E1AB12049C97800983A75 /* DayDetailsViewController.swift */,
 				4974A210204297DD0095CB31 /* DayTableViewController.swift */,
 				4974A20E20428C280095CB31 /* DayTableViewCell.swift */,
 				4974A20C204285320095CB31 /* Day.swift */,
@@ -277,10 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4974A2132042AA940095CB31 /* DayDetails.swift in Sources */,
+				493E1AB22049C97800983A75 /* DayDetailsViewController.swift in Sources */,
 				4974A20D204285320095CB31 /* Day.swift in Sources */,
-				499E47A220434B3700D5466A /* DealDetails.swift in Sources */,
 				499E47A42043539400D5466A /* Deal.swift in Sources */,
+				493E1AB42049E4A400983A75 /* HelpViewController.swift in Sources */,
 				4974A1E12042689C0095CB31 /* ViewController.swift in Sources */,
 				4974A211204297DD0095CB31 /* DayTableViewController.swift in Sources */,
 				4974A20F20428C280095CB31 /* DayTableViewCell.swift in Sources */,

@@ -14,21 +14,14 @@
  */
 import UIKit
 
-class Day: NSObject {
+class Day {
     
     // MARK: Properties - day object attributes
     var dayLabel: String?
     var messageLabel: String?
     
-    
     // Initialize and create day and message label instances
-    init?(dayLabel: String, messageLabel: String) {
-        
-        // Initialization should fail if there is no day label or if there's no message label
-        guard !dayLabel.isEmpty || !messageLabel.isEmpty else {
-            return nil
-        }
-        // Otherwise, initialize day and message labels
+    init(dayLabel: String, messageLabel: String) {
         self.dayLabel = dayLabel.capitalized
         self.messageLabel = messageLabel.capitalized
     }

@@ -10,22 +10,8 @@ import UIKit
 
 class DayTableViewCell: UITableViewCell {
     
-    // MARK: Property - dayLabel outlet
+    // MARK: - Properties
     @IBOutlet weak var dayLabel: UILabel!
-    
-    // MARK: Property - messageLabel outlet
     @IBOutlet weak var messageLabel: UILabel!
  
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        dayLabel.layer.cornerRadius = 4
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

@@ -22,7 +22,8 @@ class Deal: NSObject {
     // Initialize and create deal instances
     init?(dayDetailLabel: String, restaurantLabel: String, addressLabel: String, hoursLabel: String, priceLabel: String, infoLabel: String, dcDealIcon: UIImage) {
         
-        /* Initialization should fail if there is no day detail, restaurant,
+        /*
+         * Initialization should fail if there is no day detail, restaurant,
          * address, hours, price, or info labels.
          */
         
