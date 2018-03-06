@@ -15,21 +15,21 @@ class Deal: NSObject {
     var restaurantLabel: String?
     var addressLabel: String?
     var hoursLabel: String?
-    var priceLabel: String?
+    var detailsLabel: String?
     var infoLabel: String?
     var dcDealIcon: UIImage?
     
     // Initialize and create deal instances
-    init?(dayDetailLabel: String, restaurantLabel: String, addressLabel: String, hoursLabel: String, priceLabel: String, infoLabel: String, dcDealIcon: UIImage) {
+    init?(dayDetailLabel: String, restaurantLabel: String, addressLabel: String, hoursLabel: String, detailsLabel: String, infoLabel: String, dcDealIcon: UIImage) {
         
         /*
          * Initialization should fail if there is no day detail, restaurant,
-         * address, hours, price, or info labels.
+         * location, hours, price, or info labels.
          */
         
         guard !dayDetailLabel.isEmpty || !restaurantLabel.isEmpty ||
               !addressLabel.isEmpty || !hoursLabel.isEmpty ||
-              !priceLabel.isEmpty || infoLabel.isEmpty else {
+              !detailsLabel.isEmpty || infoLabel.isEmpty else {
             return nil
         }
         
@@ -38,7 +38,7 @@ class Deal: NSObject {
         self.restaurantLabel = restaurantLabel.capitalized
         self.addressLabel = addressLabel.capitalized
         self.hoursLabel = hoursLabel
-        self.priceLabel = priceLabel
+        self.detailsLabel = detailsLabel
         self.infoLabel = infoLabel.capitalized
         self.dcDealIcon = dcDealIcon
     }

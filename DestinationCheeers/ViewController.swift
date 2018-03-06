@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         showDealsBtn.layer.cornerRadius = 4
         informationBtn.layer.cornerRadius = 4
+    
     }
 
     override func didReceiveMemoryWarning() {
