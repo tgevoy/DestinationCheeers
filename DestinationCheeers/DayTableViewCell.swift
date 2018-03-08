@@ -14,4 +14,4 @@ class DayTableViewCell: UITableViewCell {
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
  
-}
+} // End DayTableViewCell class

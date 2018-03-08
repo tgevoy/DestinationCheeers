@@ -31,6 +31,10 @@ class Day: NSObject {
     init(dayLabel: String, messageLabel: String, restaurantLabel: String, locationLabel: String, hoursLabel: String, detailsLabel: String) {
         self.dayLabel = dayLabel.capitalized
         self.messageLabel = messageLabel.capitalized
+        self.restaurantLabel = restaurantLabel
+        self.locationLabel = locationLabel
+        self.hoursLabel = hoursLabel
+        self.detailsLabel = detailsLabel
        
     }
 } // End of Day class

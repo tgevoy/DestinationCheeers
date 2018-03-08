@@ -17,10 +17,10 @@ class Deal: NSObject {
     var hoursLabel: String?
     var detailsLabel: String?
     var infoLabel: String?
-    var dcDealIcon: UIImage?
+  
     
     // Initialize and create deal instances
-    init?(dayDetailLabel: String, restaurantLabel: String, addressLabel: String, hoursLabel: String, detailsLabel: String, infoLabel: String, dcDealIcon: UIImage) {
+    init?(dayDetailLabel: String, restaurantLabel: String, addressLabel: String, hoursLabel: String, detailsLabel: String, infoLabel: String) {
         
         /*
          * Initialization should fail if there is no day detail, restaurant,
@@ -33,14 +33,14 @@ class Deal: NSObject {
             return nil
         }
         
-        // Otherwise, initialize deal object labels and image.
+        // Initialize deal object labels
         self.dayDetailLabel = dayDetailLabel.capitalized
         self.restaurantLabel = restaurantLabel.capitalized
         self.addressLabel = addressLabel.capitalized
         self.hoursLabel = hoursLabel
         self.detailsLabel = detailsLabel
         self.infoLabel = infoLabel.capitalized
-        self.dcDealIcon = dcDealIcon
+    
     }
-}
+} // End of Deal class
 
