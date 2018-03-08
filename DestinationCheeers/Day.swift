@@ -20,21 +20,20 @@ class Day: NSObject {
     var dayLabel: String?
     var messageLabel: String?
     
-    // PUT IN INFO ABOUT OTHER VIEW LABELS HERE and link in with the view controller
-    // MARK: - Properties - day detail object attributes
+    // MARK: Properties - day detail object attributes
     var restaurantLabel: String?
     var locationLabel: String?
     var hoursLabel: String?
     var detailsLabel: String?
     
-    // Initialize and create day and message label instances
-    init(dayLabel: String, messageLabel: String, restaurantLabel: String, locationLabel: String, hoursLabel: String, detailsLabel: String) {
+    // Initialize day and day detail objects
+    init(dayLabel: String, messageLabel: String, restaurantLabel: String,
+         locationLabel: String, hoursLabel: String, detailsLabel: String) {
         self.dayLabel = dayLabel.capitalized
         self.messageLabel = messageLabel.capitalized
-        self.restaurantLabel = restaurantLabel
+        self.restaurantLabel = restaurantLabel.capitalized
         self.locationLabel = locationLabel
         self.hoursLabel = hoursLabel
-        self.detailsLabel = detailsLabel
-       
+        self.detailsLabel = detailsLabel.capitalized
     }
 } // End of Day class

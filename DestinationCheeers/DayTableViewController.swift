@@ -6,11 +6,14 @@
 //  Copyright © 2018 Tim Evoy. All rights reserved.
 //
 
+/*
+ * This day table view controller class holds the data for the day array objects in the table view.
+ */
 import UIKit
 
 class DayTableViewController: UITableViewController {
     
-    // MARK: - Properties
+    // MARK: Properties - array of days and table view cell identifier
     var daysOfWeek = [Day]()
     let cellIdentifier = "DayTableViewCell"
 
@@ -43,8 +46,6 @@ class DayTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    // MARK: - Table view data source
     
     // Tells day table view cell how many sections (visial groupings of cells) to display.
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,13 +59,14 @@ class DayTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return daysOfWeek.count
     }
+    
     // Allow for cell to be reused when user scrolls or is done with current cell selected
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Set up the requested table view cell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DayTableViewCell else {
             fatalError("Selected cell is not of type \(cellIdentifier)")
         }
-        
+        // Set the selected day and its labels to current day being used
         let selectedDay = daysOfWeek[indexPath.row]
         cell.dayLabel?.text = selectedDay.dayLabel
         cell.messageLabel?.text = selectedDay.messageLabel
@@ -72,7 +74,7 @@ class DayTableViewController: UITableViewController {
         return cell
     }
     
-    // MARK: - Navigation
+    // MARK: Navigation - to display day details view controller with dynamic data from day table view controller class
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController to populate the UI
         // Pass the selected object to the new view controller.

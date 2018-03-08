@@ -6,11 +6,15 @@
 //  Copyright © 2018 Tim Evoy. All rights reserved.
 //
 
+/*
+ * This help view controller class displays the information objects when a user
+ * selects the information button on home screen
+ */
 import UIKit
 
 class HelpViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties - help screen labels
     @IBOutlet weak var helpLabel: UILabel!
     @IBOutlet weak var contactLabel: UILabel!
     

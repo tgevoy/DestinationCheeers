@@ -24,27 +24,24 @@ class Deal: NSObject {
     var infoLabel: String?
   
     
-    // Initialize and create deal instances
+    // Initialize and create day deal instances
     init?(dayDetailLabel: String, restaurantLabel: String, addressLabel: String, hoursLabel: String, detailsLabel: String, infoLabel: String) {
         
-        /*
-         * Initialization should fail if there is no day detail, restaurant,
-         * location, hours, info, or details labels.
-         */
+        // Initialization should fail if there is no day detail, restaurant, location, hours, info, or details labels.
+        // Return nil if initialization failed
         guard !dayDetailLabel.isEmpty || !restaurantLabel.isEmpty ||
               !addressLabel.isEmpty || !hoursLabel.isEmpty ||
               !detailsLabel.isEmpty || infoLabel.isEmpty else {
             return nil
         }
         
-        // Initialize deal object to their types
+        // Initialize deal object and their types
         self.dayDetailLabel = dayDetailLabel.capitalized
         self.restaurantLabel = restaurantLabel.capitalized
         self.addressLabel = addressLabel.capitalized
         self.hoursLabel = hoursLabel
         self.detailsLabel = detailsLabel
         self.infoLabel = infoLabel.capitalized
-    
     }
 } // End of Deal class
 

@@ -6,11 +6,14 @@
 //  Copyright © 2018 Tim Evoy. All rights reserved.
 //
 
+/*
+ * This day details view controller class displays the full details of the happy hour day.
+ */
 import UIKit
 
 class DayDetailsViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties - day details screen labels
     @IBOutlet weak var dayDetailLabel: UILabel!
     @IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -19,15 +22,10 @@ class DayDetailsViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     
     var day: Day?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        // Set up the UI, depending on the day that was chosen by the user
         dayDetailLabel.text = day?.dayLabel
         infoLabel.text = day?.messageLabel
         restaurantLabel.text = day?.restaurantLabel

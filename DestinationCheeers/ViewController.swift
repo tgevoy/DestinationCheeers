@@ -6,11 +6,14 @@
 //  Copyright © 2018 Tim Evoy. All rights reserved.
 //
 
+/*
+ * This view controller class displays the objects on the main screen
+ */
 import UIKit
 
 class ViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties - home screen buttons
     @IBOutlet weak var showDealsBtn: UIButton!
     @IBOutlet weak var informationBtn: UIButton!
     
@@ -19,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Style the home page buttons
+        // Style the home screen buttons
         showDealsBtn.layer.cornerRadius = 4
         informationBtn.layer.cornerRadius = 4
     }
