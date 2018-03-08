@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var showDealsBtn: UIButton!
     @IBOutlet weak var informationBtn: UIButton!
     
- 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +29,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-}
+} // End ViewController class
 

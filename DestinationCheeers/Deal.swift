@@ -23,7 +23,6 @@ class Deal: NSObject {
     var detailsLabel: String?
     var infoLabel: String?
   
-    
     // Initialize and create day deal instances
     init?(dayDetailLabel: String, restaurantLabel: String, addressLabel: String, hoursLabel: String, detailsLabel: String, infoLabel: String) {
         
