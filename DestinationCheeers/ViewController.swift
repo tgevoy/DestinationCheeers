@@ -18,9 +18,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Style the home page buttons
         showDealsBtn.layer.cornerRadius = 4
         informationBtn.layer.cornerRadius = 4
-    
     }
 
     override func didReceiveMemoryWarning() {

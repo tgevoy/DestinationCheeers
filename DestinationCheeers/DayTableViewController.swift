@@ -17,7 +17,7 @@ class DayTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Create the day details entries
+        // Update the details of each day in the days array
         let monday = Day(dayLabel: "Monday", messageLabel: "Mango Cheesecake & Mojitos", restaurantLabel: "Case Of The Mondays", locationLabel: "123 Fake Street, Victoria, BC", hoursLabel: "3 - 6 PM", detailsLabel: "Scrumptious Mango Cheescake that melts in your mouth $5 per/slice.\n\nRefreshingly delicious Mojitos (choice of mint, raspberry, or blueberry) $5 for 2oz.")
         daysOfWeek.append(monday)
         
@@ -58,7 +58,7 @@ class DayTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return daysOfWeek.count
     }
-
+    // Allow for cell to be reused when user scrolls or is done with current cell selected
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Set up the requested table view cell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DayTableViewCell else {

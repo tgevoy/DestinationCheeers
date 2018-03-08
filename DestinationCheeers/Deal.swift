@@ -6,6 +6,11 @@
 //  Copyright © 2018 Tim Evoy. All rights reserved.
 //
 
+/*
+ * This class is the model for all of the deals of the week objects,
+ * a user selects a day from the list and is taken to a different view (screen)
+ * to display that current day's happy hour deal details.
+ */
 import UIKit
 
 class Deal: NSObject {
@@ -24,16 +29,15 @@ class Deal: NSObject {
         
         /*
          * Initialization should fail if there is no day detail, restaurant,
-         * location, hours, price, or info labels.
+         * location, hours, info, or details labels.
          */
-        
         guard !dayDetailLabel.isEmpty || !restaurantLabel.isEmpty ||
               !addressLabel.isEmpty || !hoursLabel.isEmpty ||
               !detailsLabel.isEmpty || infoLabel.isEmpty else {
             return nil
         }
         
-        // Initialize deal object labels
+        // Initialize deal object to their types
         self.dayDetailLabel = dayDetailLabel.capitalized
         self.restaurantLabel = restaurantLabel.capitalized
         self.addressLabel = addressLabel.capitalized
